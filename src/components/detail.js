@@ -38,8 +38,8 @@ class Detail extends Component {
         {localStorage.getItem('token')!==null&&
           this.props.restaurant.author.id===localStorage.getItem('userId') &&
           <div className="card-action">
-      <Link to={this.props.match.params.id+'/edit'} className="waves-effect waves-light btn-small" style={{marginRight:"20px"}}>Edit</Link>
-      <a onClick={() => this.props.DeleARest(this.props.restaurant._id,history)} className="waves-effect waves-light btn-small #f44336 red">Delete</a>
+      <Link to={this.props.match.params.id+'/edit'} className="waves-effect waves-light btn" style={{marginRight:"20px"}}>Edit</Link>
+      <a onClick={() => this.props.DeleARest(this.props.restaurant._id,history)} className="waves-effect waves-light btn #f44336 red">Delete</a>
       </div>
       }
 

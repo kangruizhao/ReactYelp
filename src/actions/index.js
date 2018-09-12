@@ -46,7 +46,7 @@ export const fetchARest=(id)=> async dispatch =>{
  dispatch({ type: "FETCH_OREST", payload: res.data.obj });
 };
 export const DeleARest=(id,history)=> async dispatch =>{
- const res =await axios.delete('http://localhost:3000/restaurant/delete/'+id);
+ const res =await axios.delete('https://kangruiyammy.herokuapp.com/restaurant/delete/'+id);
  history.push('/')
  dispatch({ type: null, payload: null });
 };

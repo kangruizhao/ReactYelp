@@ -18,7 +18,7 @@ class CommentsList extends Component {
         <p>{comment.text}</p>
           {localStorage.getItem('token')!==null&&
           comment.author.id===localStorage.getItem('userId') &&
-            <a onClick={() => this.props.DeleAComment(comment._id,this.props.hi)} className="waves-effect waves-light btn-small #f44336 red">Delete</a>}
+            <a onClick={() => this.props.DeleAComment(comment._id,this.props.hi)} className="waves-effect waves-light btn #f44336 red">Delete</a>}
           <span className="secondary-content">Post at: {date.getMonth()+1} / {date.getDate()} / {date.getYear()+1900}</span>
         </li>
       );
