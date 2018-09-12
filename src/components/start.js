@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import RestContainer from './RestContainer';
+import RestContainer from './restcontainer';
 import Jumbo from './jumbo';
 import { Link } from 'react-router-dom';
 import '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
